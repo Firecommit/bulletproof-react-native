@@ -7,12 +7,14 @@ module.exports = {
       'module-resolver',
       {
         alias: {
-          '@': path.resolve(__dirname, 'src'),
+          '&': path.resolve(__dirname, 'src'),
         },
       },
+    ],
+    [
       'module:react-native-dotenv',
       {
-        moduleName: '$env',
+        moduleName: '@env',
         path: './.env',
       },
     ],
